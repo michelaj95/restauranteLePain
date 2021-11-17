@@ -1,5 +1,8 @@
 $(document).ready(function(){
 
+
+
+
 // Scroll Elementos Menu
 	var acercaDe = $('#acerca-de').offset().top,
 		menu = $('#platillos').offset().top,
@@ -61,3 +64,10 @@ $(document).ready(function(){
 	}
 
 });
+
+
+// toggle button
+
+function myFunction(x) {
+	x.classList.toggle("change");
+	}

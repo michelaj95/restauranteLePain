@@ -60,8 +60,13 @@ header .menu a {
 	text-decoration: none;
 	position: relative;
 	font-family: 'Roboto', sans-serif;
-	
-	
+}
+
+.logo {
+
+	font-family: 'Roboto', sans-serif;
+	color: #fff;
+	text-align: left;
 }
 
 header .menu a:after {
@@ -317,9 +322,47 @@ footer .copyright {
 	color: #fff;
 }
 
+
+
+
+.bar1, .bar2, .bar3 {
+
+	width: 35px;
+	height: 5px;
+	background-color: white;
+	margin: 6px 0;
+	transition: 0.4s;
+	
+}
+
+.change .bar1 {
+	-webkit-transform: rotate(-45deg) translate(-9px, 6px);
+	transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+	-webkit-transform: rotate(45deg) translate(-8px, -8px);
+	transform: rotate(45deg) translate(-8px, -8px);
+  }
+
+  .container.toggle{
+
+	display: none;
+  }
+
 /* ----- ----- MEDIA QUERIES ----- ----- */
+
+
+
+
 @media screen and (max-width: 800px) {
+
+
+
 	header .contenedor {
+
 		position: static;
 		height: auto;
 	}
@@ -327,6 +370,7 @@ footer .copyright {
 	header .textos {
 		position: static;
 		margin: 100px 0;
+		text-align: center;
 	}
 
 	header .menu {
@@ -376,6 +420,30 @@ footer .copyright {
 }
 
 @media screen and (max-width: 400px) {
+
+
+	.menu {
+
+		display: none;
+	}
+
+	.container.toggle {
+
+		display:inline-block;
+		cursor:pointer; 
+		margin-top: 10px;  
+		
+	}
+
+
+	.menu {
+		
+	}
+
+	.main .galeria{
+		overflow: inherit;
+	}
+
 	.main .acerca-de article h3 {
 		font-size: 34px;
 		margin-bottom: 10px;
