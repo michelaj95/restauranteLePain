@@ -54,20 +54,14 @@ header .menu {
 header .menu a {
 	color: #fff;
 	font-size: 20px;
-	font-weight: 300;
+	font-weight: 500;
 	display: inline-block;
 	margin: 40px 20px;
 	text-decoration: none;
 	position: relative;
-	font-family: 'Roboto', sans-serif;
+	font-family: "Open Sans", Arial, Sans-serif;
 }
 
-.logo {
-
-	font-family: 'Roboto', sans-serif;
-	color: #fff;
-	text-align: left;
-}
 
 header .menu a:after {
 
@@ -79,7 +73,6 @@ header .menu a:after {
 	left : 0; 
 	bottom: -10px;
 	transition: 0.3s;
-	
 }
 
 header .menu a:hover:after {
